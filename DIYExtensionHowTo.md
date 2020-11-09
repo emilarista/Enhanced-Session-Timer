@@ -16,7 +16,7 @@ Verify some variables:
     rpm --eval '%{_tmppath}'
     /var/tmp
 
-## Add your code
+## Add your code
 
 cd into the SOURCES subdir and create a folder for your project:
 
@@ -31,14 +31,14 @@ Copy your scripts or whatever into the bin folder you just created.
 
 You need to write a spec for your RPM and put it in the SPECS subfolder of rpmbuild. Writing specs is a little bit involved and I am by no means an expert. Just look at the one i wrote for my extension. If you want to explore it further there's probably a ton of info on writing specs on the interwebs.
 
-## Zip your scripts
+## Zip your scripts
 
 IMPORTANT!! The name of the tarball you create must reflect the name you reference in your rpm spec file. 
 
     cd ~/rpmbuild/SOURCES
     tar -zcvf MyProject-1-0.gz MyProject/
 
-## Build your RPM
+## Build your RPM
 
 Build your RPM with rpmbuild command, you may need to install some packages for it to work.
 
