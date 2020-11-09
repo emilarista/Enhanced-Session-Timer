@@ -14,6 +14,7 @@ Verify some variables:
     rpm --eval '%{_rpmdir}'
     /home/youruser/rpmbuild/RPMS
     rpm --eval '%{_tmppath}'
+    /var/tmp
 
 ## Add your code
 
